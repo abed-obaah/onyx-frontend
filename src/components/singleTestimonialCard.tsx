@@ -1,17 +1,16 @@
-import profile from '../assets/imgs/img1.jpg'
 import {  StarIcon } from "@heroicons/react/24/solid";
 
-function Testimonial() {
+function Testimonial(props) {
     return (
         <>
-            <div className="bg-blue-950 max-w-80 p-8 rounded-3xl flex flex-col gap-8">
+            <div className="bg-main max-w-80 p-8 rounded-3xl flex flex-col gap-8">
                 <div className="border-b border-white pb-8">
-                    <img src= {profile} alt="" width="80%" className='rounded-full aspect-square object-cover object-top mx-auto'/>
+                    <img src= {props.img} alt="" width="80%" className='rounded-full aspect-square object-cover object-top mx-auto'/>
                 </div>
 
                 <div className='text-white'>
                     <p className="text-sm">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat officiis voluptate consequatur fugit repellendus soluta voluptatum qui quos eius, consectetur vel, iusto, porro nisi? Suscipit?
+                        {props.text}
                     </p>
 
                     <div className="justify-end flex mt-6">
