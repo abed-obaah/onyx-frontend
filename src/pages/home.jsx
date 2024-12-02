@@ -4,10 +4,19 @@ import profile1 from '../assets/imgs/img2.jpg';
 import laptop from '../assets/imgs/pc.png';
 import WWD from "../components/journeyCard";
 import Logo1 from "../assets/logo/logo-white.png"
+import Nav from "../components/nav";
 
 export default function Home() {
   return (
     <>
+      <div>
+        <Nav />
+      </div>
+
+      <div className="h-screen h-dvh bg-blue-300">
+
+      </div>
+
       <div className="bg-main p-24">
           <div className="border-0 border-b-white flex mb-11 justify-between">
             <div className="text-white w-1/2 px-12">
@@ -33,7 +42,7 @@ export default function Home() {
 
 
       {/* Testimonial section */}
-      <div className="text-center text-4xl font-bold">
+      <div className="text-center text-4xl font-bold mt-10">
         <h1>Testimonies</h1>
       </div>
     
