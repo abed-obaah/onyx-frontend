@@ -4,10 +4,42 @@ import profile1 from '../assets/imgs/img2.jpg';
 import laptop from '../assets/imgs/pc.png';
 import WWD from "../components/journeyCard";
 import Logo1 from "../assets/logo/logo-white.png"
+import Nav from "../components/nav";
+import below from "../assets/imgs/below.png"
+import trsnf from "../assets/imgs/trnsf.png"
 
 export default function Home() {
   return (
     <>
+      <div className="">
+        <Nav/>
+      </div>
+
+      <div className="h-screen bg-hero bg-cover bg-center bg-no-repeat">
+        {/* <img src={hero} alt="" className="object-contain object-center w-100%"/> */}
+      </div>
+
+      <div className="">
+        <img src={below} alt="" className="w-full"/>
+      </div>
+
+      <div className="mb-20 bg-gradient-to-b from-lghtest to-lght mx-8 rounded-2xl px-20 pt-10 grid gap-6 grid-cols-2">
+        <div className="flex flex-col justify-center gap-5 w-1/2">
+          <h5 className="text-main font-bold">Daily Transactions</h5>
+
+          <h1 className="text-3xl text-white font-bold">Get your Oniix Account</h1>
+          <h1 className="text-4xl text-main font-bold">Experience Next Level Banking</h1>
+
+          <p className="text-white font-light">Sign up today for streamlined global transactions and instant access to your money</p>
+
+          <button className="bg-seco text-white font-bold rounded-lg w-fit px-3 py-2">Create an Account now</button>
+        </div>
+
+        <div className="">
+          <img src={trsnf} alt="" />
+        </div>
+      </div>
+
       <div className="bg-main p-24">
           <div className="border-0 border-b-white flex mb-11 justify-between">
             <div className="text-white w-1/2 px-12">

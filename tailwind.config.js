@@ -10,6 +10,12 @@ export default {
         'main': '#070618',
         'seco': '#1B1762',
         'lght': '#4E4A95',
+        'lghtest': '#a999fb'
+      },
+
+      backgroundImage : {
+        'hero': "url('./src/assets/imgs/hero.png')",
+        'below': "url('./src/assets/imgs/below.png')"
       }
     },
   },
